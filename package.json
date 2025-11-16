@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/riasingh125/CS4550-A1#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0"
   }
 }
