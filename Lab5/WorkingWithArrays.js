@@ -22,7 +22,6 @@ let todos = [
           title: "New Task",
           completed: false,
         };
-        console.log("Creating new todo:", newTodo);
         todos.push(newTodo);
         res.json(todos);
       };

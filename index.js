@@ -24,6 +24,11 @@ app.use(
     secret: process.env.SESSION_SECRET || "kambaz",
     resave: false,
     saveUninitialized: false,
+    cookie: {
+      secure: false, 
+      sameSite: "lax",
+      httpOnly: true
+    }
   };
   if (process.env.SERVER_ENV !== "development") {
     sessionOptions.proxy = true;
